@@ -1,10 +1,11 @@
 import Phaser from "../lib/phaser.js";
+import { SCENE_KEYS } from "../scenes/scene-keys.js";
 
 export class PreloadScene extends Phaser.Scene {
   constructor() {
     super ({
-      key: PreloadScene.name,
+      key: SCENE_KEYS.PRELOAD_SCENE,
     });
-    console.log(PreloadScene.name);
+    console.log(SCENE_KEYS.PRELOAD_SCENE);
   }
 }

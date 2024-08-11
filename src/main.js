@@ -1,10 +1,11 @@
 // Main starting point of game, everything needed to start the game is here
 
 import Phaser from './lib/phaser.js';
+import { SCENE_KEYS } from './scenes/scene-keys.js';
 import { PreloadScene } from './scenes/preload-scene.js';
 
 const game = new Phaser.Game({
   parent: 'game-container',
 });
 
-game.scene.add(PreloadScene.name, PreloadScene);
+game.scene.add(SCENE_KEYS.PRELOAD_SCENE, PreloadScene);
